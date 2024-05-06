@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project</title>
+
+<style>
+    .head{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        gap:10px
+    }
+.comparto{
+    background-color: blueviolet;
+    color: aliceblue;
+    display: flex;
+    width: 20%;
+    height:200px;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    background-image: linear-gradient(rgb(177, 57, 177));
+    background-color: rgb(134, 172, 216,0.5);
+    width: 80%;
+
+    display: grid;
+grid-template-columns: auto auto auto auto auto;
+justify-content: space-between;
+align-items: end;
+/* background-image: -webkit-linear-gradient(olive,red,green,yellow,blue,blueviolet); */
+}
+
+.navcdn{
+    background-color: white;
+    display: flex;
+    width: 200px;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+.imgcamparto{
+    display: flex;
+    background-color: rgb(249, 240, 228,.8);
+    gap: 20px;
+    
+}
+
+.imgcamparto>div{
+    /* margin-left: 5%; */
+    width: 100%;
+}
+
+.grid1{
+grid-area: grid1;
+background-color: rgb(186, 180, 180,0.2);
+width: 45vw;
+justify-content: center;
+align-content: center;
+text-align: center;
+font-size: 25px;
+
+}
+.grid2{
+    grid-area: grid2;
+    background-color:rgb(138, 134, 134,0.8);
+    width: 45vw;
+    justify-content: center;
+align-content: center;
+text-align: center;
+font-size: 25px;
+
+}
+.grid3{
+    grid-area: grid3;
+    width: 50vw;
+    justify-content: center;
+align-content: center;
+text-align: center;
+font-size: 25px;
+
+}
+
+.img2{
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-areas: 'grid1 grid3' 'grid2 grid3';
+    gap: 10px;
+}
+
+.places{
+    display:flex;
+justify-content: space-around;
+background-color: rgba(114, 104, 160, 0.5);
+align-items: center;
+text-align: center;
+height: 240px;
+color: white;
+font-size: 20px;
+}
+.gallerytitle{
+    background-color: rgb(0, 132, 255,0.5);
+    height: 140px;
+    text-align: center;
+}
+.gallerytitle>h1{
+text-align:right;
+}
+.gallery1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 11px;
+}
+.contact{
+background-color:rgb(44, 132, 46);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 150px;
+}
+.mapinput{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+   
+    height:450px;
+    align-items: center; text-align: center;
+   
+}
+
+.mapinput>div{
+
+    background-color: rgb(186, 180, 180,0.2);
+    width:33%;
+    height: 450px;
+
+    font-size: 25px;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+input{
+    margin-top: 20px;
+    width: 400px;
+    height: 60px;
+
+    opacity: 0.7;
+    border-radius: 5%;
+   background-color: rgb(203, 231, 237);
+   font-size: 20px;
+   border-style: none;
+}
+.manu{
+    width: 100%;
+    margin-top: 30px;
+    /* margin-left: 40px; */
+
+    /* background-image: url("./background6.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.bgf{
+    background-image: url("./background5.jpeg"); 
+    width: 100%;
+    height: 450px;  
+}
+.lastbutone{
+    background-color:rgb(44, 132, 46) ;
+    height: 30px;
+}
+.last{
+text-align: center; 
+}
+
+@media screen and (min-width :236px) and (max-width :600px){
+ body{
+margin: 1px;
+} 
+    .head{
+        width: 100%;
+        display: block;
+    }
+.comparto{
+    width: 100%;
+    display: flex;
+flex-direction: column;
+height: auto;
+
+}
+
+.navcdn{
+    width: 100%;
+display: flex;
+flex-direction: column;
+height: auto;
+}
+
+.imgcamparto{
+    display: block;
+
+height: auto;
+font-size: 25px;
+}
+
+.img2{
+    display: block;
+width: 100%;
+height: auto;
+}
+.img2>div{
+    width: 100%;
+}
+.grid3>img{
+    width:100%;
+    height: 300px;
+}
+.gallery1 {
+display: block;
+gap: 10px;
+}
+.gallery1>img{
+    width: 100%;
+}
+
+.mapinput{
+    display: block;
+    width: 100%;
+}
+.mapinput>div{
+    width: 100%;
+    height: 300px;
+}
+.iframe{
+    width: 100%;
+    height: 450px;
+}
+.manu{
+    margin-left: 30px;
+    margin-top: 160px;
+    display: block;
+    height: 450px;
+}
+
+.lastbutone{
+    margin-top: 800px;
+    display: block;
+    width: 100%;
+z-index: 0;
+
+}
+.last{
+    margin-bottom: 0px;
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+}
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="head">
+    <div class="comparto"> COMPARTO</div>
+    <div class="nav">
+        <div class="navcdn" style="visibility: hidden;"></div>
+<div class="navcdn" style="background-color: rgba(251, 101, 41, 0.5); color:rgb(239, 245, 251) !important"><a href="#c1">.01<br><br> About</a></div>
+<div class="navcdn"><a href="#c2">.02 <br><br> Services</a></div>
+<div class="navcdn"><a href="#c3">.03 <br><br> Gallery</a></div>
+<div class="navcdn"><a href="#c4">.04 <br><br>  Contact</a></div>
+
+    </div>
+</div><br><br>
+
+<div class="imgcamparto" id="c1">
+
+    <div><img src="../MEDIA AND PICS/comparto-image-01.jpg" alt="" width="100%" ></div>
+    <div><h1>.01 Comparto CSS Layout</h1>
+        <div><p>Comaprto is a custom light-weight Css layout for your website. You can easily adopt and use this for your commercial or personal websites.Feel free to use it.</p><br>
+        </div><p>Comaprto is a custom light-weight Css layout for your website. You can easily adopt and use this for your commercial or personal websites.Feel free to use it.</p><br>
+      <div><p>You cannot redistribute this template ZIP file in any template collection website. Please contact TemplateMo if you have any question.</p><br>
+      </div>  <p>You cannot redistribute this template ZIP file in any template collection website. Please contact TemplateMo if you have any question.</p><br>
+        
+   <div><p>Nunc sed gravida elit.</p></div> 
+    <button style="background-color: rgb(98, 65, 155); border: rgb(210, 170, 195); border-radius: 15%;width:70px; height:40px;">more Details</button>
+
+    </div>
+</div><br><br><br>
+<div class="places">
+    <div>
+    <img src="../MEDIA AND PICS/synagogue_14672253.png" alt="" width="70px" height="70px"><br>
+    Aenean velest id massa <br> condimentum </div>
+    <div>
+
+        <img src="../MEDIA AND PICS/images_7710741.png" alt=""  width="70px" height="70px"><br>
+    Suspendisee interdum lectus <br> purus</div>
+
+    <div>
+
+        <img src="../MEDIA AND PICS/infographic-bars_1202.png" alt=""  width="70px" height="70px"><br>
+    Nulla ac sodales est vel iaculis <br>purus</div>
+</div><br><br><br>
+
+<div class="img2">
+
+<div class="grid1" id="c2">   
+    <h1>.02 aliquam pretium hendrerit</h1>
+    <br>
+    cras tempus, velit facilis venenatis,<br> erat felis imperdiet lectus, at posuere elit 
+    <br> metus. Title#333 BG#f2f2f2<br><br><br>
+    Nam iaculis, urna ut laoreet aliquam, massa <br> magna dapibus. Text#666 <br><br>
+</div>
+<div class="grid2">
+    Nam  iaculis, zzurna ut laoreet aliquam, massa <br> magna dapibus nibh, at pellentesque lectus<br>
+    odio non risus, NUlla ac sodales est, vel <br> iaculis.Text#333 .BG#DDD <br><br>
+    <button style="background-color: rgb(178, 92, 145); border: rgb(210, 170, 195); border-radius: 12%; width:80px; height:30px;">Read More</button>
+</div>
+<div class="grid3"><img src="../MEDIA AND PICS/comparto-image-02.jpg" alt="" width="100%" height="700px">
+    </div>
+
+</div><br><br><br>
+
+<div class="gallerytitle" id="c3">
+    <h1>.03 The Gallery section </h1><br><br> <p>Show All . Nature .Animals . people</p>
+</div><br><br><br>
+<div class="gallery1">
+
+    <img src="../MEDIA AND PICS/gallery-item-01.jpg" alt="manu">
+    <img src="../MEDIA AND PICS/gallery-item-02 (1).jpg" alt="manu">
+
+    <img src="../MEDIA AND PICS/gallery-item-03 (1).jpg" alt="manu">
+    <img src="../MEDIA AND PICS/gallery-item-04 (1).jpg" alt="manu">
+
+    <img src="../MEDIA AND PICS/gallery-item-05.jpg" alt="manu">
+    <img src="../MEDIA AND PICS/gallery-item-06.jpg" alt="manu">
+
+    <img src="../MEDIA AND PICS/gallery-item-07.jpg" alt="manu">
+    <img src="../MEDIA AND PICS/gallery-item-08.jpg" alt="manu">
+
+    <img src="../MEDIA AND PICS/gallery-item-09.jpg" alt="manu">
+    <img src="../MEDIA AND PICS/gallery-item-10.jpg" alt="manu">
+</div><br><br>
+
+<div style="background-color: rgb(134, 173, 247); height: 30px; "></div><br><br>
+<div class="contact" id="c4"><h1>.04 Contact Us</h1></div><br><br><br><br>
+
+<div class="mapinput">
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30445.80867241658!2d78.36973249912263!3d17.47281970089294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9180e3b4b101%3A0x2fbe2ab928b4b06!2sAnkura%20Hospital%20for%20Women%20%26%20Children%20-%20Gynecologist%20%26%20Pediatrician%20in%20KPHB%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1714359251417!5m2!1sen!2sin" width="400px" height="450px"></iframe>
+
+<div>
+     <div class="bgf">
+        <input type="text" placeholder="Name" > <br><br>
+          <input type="text" placeholder="Email"><br><br>
+              <input type="text" placeholder="Message" width="200px" height="500px"><br><br>
+        <button class="click" style="background-color: rgb(178, 92, 145); border: rgb(210, 170, 195); border-radius: 15%;width:50px; height:30px;"> send</button>
+       <!-- <br><br> <div class="click hidden">Thank you for your interest</div> -->
+    
+    </div></div>
+    <div>
+    <div class="manu">
+        pellentesque egesto odio <br>
+    sed tellus dictum, vel lobortis <br>
+ante venhicula.
+<br><br>Morbe eget accumsan libero, <br> non tincidunt felis. <br><br>
+Tel:010-020-0990<br> Email:info@company.com</div></div>
+</div><br><br>
+<div class="lastbutone"> </div><br><br><br><br>
+<div class="last"> 
+<a href="https://www.facebook.com"><img src="../MEDIA AND PICS/icons8-facebook-48.png" alt=""></a>
+<a href="https://www.instagram.com"><img src="../MEDIA AND PICS/icons8-instagram-logo-48.png" alt=""></a>
+<a href="https://www.twitter.com"><img src="../MEDIA AND PICS/icons8-social-media-logo-50.png" alt=""></a>
+<a href="https://www.youtube.com"><img src="../MEDIA AND PICS/icons8-youtube-logo-24.png" alt=""></a>
+<br><br>
+copy right 2020 Comaprto studio-Design:TemplateMo.
+</div>
+</body>
+</html>
+
+
